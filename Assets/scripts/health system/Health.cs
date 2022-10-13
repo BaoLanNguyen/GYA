@@ -9,29 +9,27 @@ public class Health : MonoBehaviour
         get;
         private set;
     }
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = startingHealth;
+        anim = GetComponent<Animator>();
     }
     public void takeDamage(float damage){
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
-        if (currentHealth >0)
+        if (currentHealth > 0)
         {
-            
+            anim.SetTrigger("hurt");
         }
         else
         {
-            
+            anim.SetTrigger("die");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            takeDamage(1);
-        }
     }
 }
