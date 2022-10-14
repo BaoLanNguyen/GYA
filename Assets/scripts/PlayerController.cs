@@ -29,18 +29,15 @@ public class PlayerController : MonoBehaviour
         if (isGrounded == true)
         {
             ExtraJumps = ExtraJumpsValues;
-            animator.SetBool("isJumping", false);
         }
         if (Input.GetButtonDown("Jump") && ExtraJumps > 0)
         {
             rb.velocity = Vector2.up * jumpForce;
             ExtraJumps--;
-            animator.SetBool("isJumping", true);
         }
         else if(Input.GetButtonDown("Jump") && ExtraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
-            animator.SetBool("isJumping", true);
         }
         moveInput = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("speed", Mathf.Abs(moveInput));

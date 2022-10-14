@@ -22,14 +22,18 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("hurt");
         }
-        else
+        else if (currentHealth == 0)
         {
             anim.SetTrigger("die");
+            GetComponent<PlayerController>().enabled = false;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.E)){
+            takeDamage(1);
+        }
     }
 }
