@@ -28,6 +28,9 @@ public class Health : MonoBehaviour
             GetComponent<PlayerController>().enabled = false;
         }
     }
+    public void addhealth(float value){
+        currentHealth = Mathf.Clamp(currentHealth + value, 0, startingHealth);
+    }
 
     // Update is called once per frame
     void Update()
@@ -36,4 +39,5 @@ public class Health : MonoBehaviour
             takeDamage(1);
         }
     }
+
 }
