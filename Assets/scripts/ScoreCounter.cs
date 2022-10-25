@@ -7,6 +7,7 @@ public class ScoreCounter : MonoBehaviour
 {
        private int scoreValue;
     public TMP_Text score;
+    public bool IsGemDestroyed = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +16,20 @@ public class ScoreCounter : MonoBehaviour
     }
  
    private void OnTriggerEnter2D(Collider2D gem) {
-    scoreValue +=10;
-    Destroy(gem.gameObject);
+    if( gem.tag =="gem"){
+    Destroy (gem.gameObject);
+    if (IsGemDestroyed == false)
+    {
+        scoreValue+=10;
+        IsGemDestroyed=true;
+    }
+}
    }
     void Update()
+    { if(IsGemDestroyed==true)
     {
+        IsGemDestroyed=false;
+    }
         score.text ="score: " + scoreValue;
     }
 }
