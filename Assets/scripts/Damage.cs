@@ -9,5 +9,12 @@ public class Damage : MonoBehaviour
             collision.GetComponent<Health>().takeDamage(damage);
         }
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            collision.GetComponent<Health>().takeDamage(damage);
+        }
+    }
 
 }
