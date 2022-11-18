@@ -5,6 +5,8 @@ using UnityEngine;
 public class playerAttack : MonoBehaviour
 {
     [SerializeField] private float attackCD;
+    [SerializeField] private Transform firePoint;
+    [SerializeField] private GameObject[] shots;
     private PlayerController playermovement;
     private float CDtimer = Mathf.Infinity;
     // Start is called before the first frame update
@@ -24,5 +26,7 @@ public class playerAttack : MonoBehaviour
     }
     private void Attack(){
         CDtimer = 0;
+        shots[0].transform.position = firePoint.position;
+        shots[0].GetComponent<projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 }
