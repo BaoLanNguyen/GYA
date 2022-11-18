@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class ScoreCounter : MonoBehaviour
 {
-       private int scoreValue;
+       public static int scoreValue;
     public TMP_Text score;
     public bool IsGemDestroyed = false;
     // Start is called before the first frame update
