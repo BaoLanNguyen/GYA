@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class projectile : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
     [SerializeField] private float speed;
     private float direction;
@@ -29,13 +29,13 @@ public class projectile : MonoBehaviour
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
     }
-    public void SetDirection(float Direction){
-        direction = Direction;
+    public void SetDirection(float _direction){
+        direction = _direction;
         gameObject.SetActive(true);
         hit = false;
         boxCollider.enabled = true;
         float localScalex = transform.localScale.x;
-        if (Mathf.Sign(localScalex) != Direction)
+        if (Mathf.Sign(localScalex) != _direction)
             localScalex = -localScalex;
         
         transform.localScale = new Vector3(localScalex, transform.localScale.y, transform.localScale.z);}

@@ -24,9 +24,9 @@ public class playerAttack : MonoBehaviour
         }
         CDtimer += Time.deltaTime;
     }
-    private void Attack(){
+    public void Attack(){
         CDtimer = 0;
         shots[0].transform.position = firePoint.position;
-        shots[0].GetComponent<projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        shots[0].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
 }
