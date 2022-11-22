@@ -6,7 +6,7 @@ public class playerAttack : MonoBehaviour
 {
     [SerializeField] private float attackCD;
     [SerializeField] private Transform firePoint;
-    [SerializeField] private GameObject[] shots;
+    public GameObject shotPrefab;
     private PlayerController playermovement;
     private float CDtimer = Mathf.Infinity;
     // Start is called before the first frame update
@@ -24,9 +24,8 @@ public class playerAttack : MonoBehaviour
         }
         CDtimer += Time.deltaTime;
     }
-    public void Attack(){
+    private void Attack(){
         CDtimer = 0;
-        shots[0].transform.position = firePoint.position;
-        shots[0].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        Instantiate(shotPrefab, firePoint.position, firePoint.rotation);
     }
 }
