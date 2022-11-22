@@ -49,7 +49,7 @@ public class Health : MonoBehaviour
         }
     }
     private IEnumerator Invulnerability(){
-        Physics2D.IgnoreLayerCollision(10, 11, true);
+        Physics2D.IgnoreLayerCollision(7, 8, true);
         for (int i = 0; i < numberOfFlashes; i++)
         {
             spriterend.color = new Color(1,0,0,0.5f);
@@ -57,7 +57,7 @@ public class Health : MonoBehaviour
             spriterend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
-        Physics2D.IgnoreLayerCollision(10, 11, false);
+        Physics2D.IgnoreLayerCollision(7, 8, false);
     }
 
 }
