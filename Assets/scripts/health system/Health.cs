@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] private float startingHealth;
+    
     public float currentHealth{
         get;
         private set;
@@ -19,6 +21,7 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriterend = GetComponent<SpriteRenderer>();
+       
     }
     public void takeDamage(float damage){
         currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
@@ -31,6 +34,12 @@ public class Health : MonoBehaviour
         {
             anim.SetTrigger("die");
             GetComponent<PlayerController>().enabled = false;
+            
+            Scene currentScene = SceneManager.GetActiveScene();
+            string SceneName = currentScene.name;
+            if(SceneName == "Level1"){
+             SceneManager.LoadScene("OverMenu1");
+            }
         }
     }
     public void addhealth(float value){
@@ -39,7 +48,7 @@ public class Health : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         if (Input.GetKeyDown(KeyCode.E)){
             takeDamage(1);
         }
