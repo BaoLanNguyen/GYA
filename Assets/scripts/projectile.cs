@@ -31,7 +31,7 @@ public class Projectile : MonoBehaviour
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
         if (collision.tag == "enemy"){
-            collision.GetComponent<Health>().takeDamage(damage);
+            collision.GetComponent<enemyHealth>().takeDamage(damage);
         }
     }
     private void Deactivate(){
