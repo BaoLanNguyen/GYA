@@ -1369,9 +1369,15 @@ GameObject:
   m_Component:
   - component: {fileID: 170411087}
   - component: {fileID: 170411088}
-  m_Layer: 0
-  m_Name: slime
-  m_TagString: Untagged
+  - component: {fileID: 170411089}
+  - component: {fileID: 170411090}
+  - component: {fileID: 170411091}
+  - component: {fileID: 170411092}
+  - component: {fileID: 170411093}
+  - component: {fileID: 170411094}
+  m_Layer: 8
+  m_Name: eagle
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1384,7 +1390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170411086}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24, y: 1.02, z: 0.46219316}
+  m_LocalPosition: {x: 0.01, y: 0.22, z: 0.46219316}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1432,7 +1438,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 906ad27146526e0498ef9704dfdb8ab0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f240dfd4814d34d55a9b033f3c9d8a60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1443,6 +1449,104 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &170411089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf1a45780e619c4ea745b8696ceab3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiPath: {fileID: 486264420}
+--- !u!50 &170411090
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411086}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &170411091
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0052886964, y: -0.016761018}
+  serializedVersion: 2
+  m_Radius: 0.19627532
+--- !u!95 &170411092
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411086}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e5bb58a9d3818b842beb450b4cb892cc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &170411093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85fb8ad32c76b446aebe2dd4b9d0d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &170411094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170411086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acb22aacb61a85043aecc76ba4f5a784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  OverManager: {fileID: 0}
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &185236608
 GameObject:
   m_ObjectHideFlags: 0
@@ -2753,7 +2857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 437514894}
   - component: {fileID: 437514893}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3264,8 +3368,9 @@ GameObject:
   - component: {fileID: 486264422}
   - component: {fileID: 486264421}
   - component: {fileID: 486264420}
+  - component: {fileID: 486264423}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: Flying Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3287,8 +3392,8 @@ MonoBehaviour:
   radius: 1.35
   height: 2
   canMove: 1
-  maxSpeed: 3
-  gravity: {x: NaN, y: NaN, z: NaN}
+  maxSpeed: 6
+  gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3296,7 +3401,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5
@@ -3349,14 +3454,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486264419}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -353.23, y: -113.34, z: -0.46219316}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -347.85, y: -97.39, z: -0.47445}
+  m_LocalScale: {x: 1.0649937, y: 1.0265, z: 1.0265}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 170411087}
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &486264423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486264419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 748255615}
 --- !u!1 &530798032
 GameObject:
   m_ObjectHideFlags: 0
@@ -8044,7 +8163,7 @@ GameObject:
   - component: {fileID: 1410639972}
   - component: {fileID: 1410639971}
   - component: {fileID: 1410639973}
-  m_Layer: 9
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55688,7 +55807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIezuopAxgAIAADcFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMuS2jAQ/BVK50DJ5p1b4mXZHHahlqT24ouwx1iFLLkkmcdu8e8ZyTZ2yAnRPY+e1shfhEtTQmKVXmuevqoUyPcBcWfybdCRL3BhByV3/BPamA+e2twFMR/zzixXiAcuzagCrObJD3kQLpgiWEmeKV2s0gNEyliDcMaEAaS0si5bIvQ1IBf8GS5dyhVP4dydPvG0pIMbHhOQFnQvNFzS0SygwWzRpAyX89E4nC7mk3GTOgxG8wkdh+FksRrSqa9TyUSwooTUDdWVG9OgKTOf+TiJ8zYhjkmUENw0Yom9lt6MiJWmwlExIOUMh/cKg5ETkAM/5NaN0k/fZJkB23ij2fWJa3Sxrkt+qtragpljLe3EROU6TYPQq6qLvv7HDwNPZ1oVL23fgLoeNufJ8Z1dE2Zsz/s+/NST7h06M3FkewEfOcg3tdaqkimSVlcutTIQPnV/76NFOSTHDq+lPoBV2VneXjW939bgdvPTXyLBi72jRpMa2AnlHff7ARrv5hcK9ttjmhKIOhV/DPxmh/6aNcQz18Yi1Uwpnby9qrQLJSvvmZumspHSEjzciC5BMmGvWyxjH6/wgeu1fWCemXtQTfOGa9/JQ4qHu3hKH6itOt8vy+Tq/Aom31RWcAmdaEe8oU+RkrLesL4nbdqu0hlLemmHiqf/rha+vFk4CynQ6XgKMxoMJ8uMzReMJUG6COlyQvzucYlzMrGthTb24K3JrrjEPWu/M4O1ZqXf9lSz85p/FqpnOZeZ2iUaQG7qCnfhoLEJvst0lXI0aAfWcunvm3zFRKjkCGl8LxT7SVcXq1ncVYlJyU/KOiQmkf+wxMTB913eajhxOLvmbbEbuf0FUEsDBBQAAAgIAAAIIezTESxmbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRScqqZkZmRQaqBqbFpqpmBoa6JZVqiuUViYrJhioWRgaWJUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIezuopAxgAIAADcFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIezTESxmbQAAAHgAAAAJACQAAAAAAAAAAAAAAM0CAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAhQMAAAAA
+    dataString: UEsDBBQAAAgIAAAIIezV95fdgAIAADYFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzoWRjfnqrXUI6SEJE9rJxRdhr7EGWfJIcoBk+O9dyTZ26Qnx3n68fVr5i3BpKkit0hvNs2eVAfk+Iu5Mvo168gnO7KDkjn9CF/POM1u4IOZj3pjlCvHApRlVgtU8/SEPwgVTBGvJc6XLdXaAWBlrEM6ZMICUVtZlS4S+RuSMP+OVS7ngKVy40yeeVnR0xWMK0oIehIYrOpkHNJgv25TxajGZhrPlIpq2qeNgsojoNAyj5XpMZ75OLVPBygoyN1RfbkqDtsxi7uMkztuGOCZVQnDTiiX2UnkzYlaZGkfFgIwzHN4rDCZOQAH8UFg3yjD9Nc8N2NYbzS4PXKOLTV3yUzXWlswcG2kfTNSu0zzyopqaz//R48DTuVblU9c2oK6FLXh6fGOXlBk7sH4IPwyUe4NOTBzZXsB7AfJFbbSqZYak1bVLrQ2ED/3f22RxAemxxxupd2Bd9Y53N01vlzW6Xv3w51jwcu+oSdQAO6G84X49QOPV/ELBfnlMWwJRp+KPgd/sMNyylnjk2lik2imlk7dXtXahZO09c9PUNlZagodb0RVIJuxli2Xs/Q3ecYO2d8wjc++pbd5y3TO5S/FwH0/pHbVVp9tlmUKdnsEUr7UVXEIv2hEv6FOspGwWbOhJl7ardc7SQdqh5tm/q4UPbx7OQwp0Np3BnAbjaJWzxZKxNMiWIV1FxO8elzgnE9tGaGsP3prsi0vcs+4zM9poVvllzzQ7bfhnqQaWc5mrXaoB5GtT4SYcNDbBZ5mtM44G7cBaLv19k6+ECJUeIUtuhRI/6fpsNUv6Kgmp+IeyDklI7L8rCXHwbZe3Gj44nFzzrtiVXP8CUEsDBBQAAAgIAAAIIezTESxmbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrRScqqZkZmRQaqBqbFpqpmBoa6JZVqiuUViYrJhioWRgaWJUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIezV95fdgAIAADYFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIezTESxmbQAAAHgAAAAJACQAAAAAAAAAAAAAAM0CAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAhQMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
