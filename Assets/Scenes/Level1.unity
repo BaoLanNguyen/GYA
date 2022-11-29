@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1888182ef3674945a50ebc1a1ef0dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 2
   iFramesDuration: 0
   numberOfFlashes: 0
 --- !u!1 &185236608
@@ -3368,9 +3368,9 @@ GameObject:
   - component: {fileID: 486264421}
   - component: {fileID: 486264420}
   - component: {fileID: 486264423}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flying Enemy
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
