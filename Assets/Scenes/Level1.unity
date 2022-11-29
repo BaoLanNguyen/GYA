@@ -1373,8 +1373,8 @@ GameObject:
   - component: {fileID: 170411090}
   - component: {fileID: 170411091}
   - component: {fileID: 170411092}
-  - component: {fileID: 170411093}
   - component: {fileID: 170411094}
+  - component: {fileID: 170411093}
   m_Layer: 8
   m_Name: eagle
   m_TagString: enemy
@@ -1540,11 +1540,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 170411086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acb22aacb61a85043aecc76ba4f5a784, type: 3}
+  m_Script: {fileID: 11500000, guid: c1888182ef3674945a50ebc1a1ef0dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
-  OverManager: {fileID: 0}
   iFramesDuration: 0
   numberOfFlashes: 0
 --- !u!1 &185236608
@@ -5342,7 +5341,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &792109854
 GameObject:
