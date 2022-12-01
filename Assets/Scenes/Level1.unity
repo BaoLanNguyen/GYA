@@ -5251,6 +5251,7 @@ GameObject:
   - component: {fileID: 791651828}
   - component: {fileID: 791651831}
   - component: {fileID: 791651832}
+  - component: {fileID: 791651834}
   - component: {fileID: 791651833}
   m_Layer: 8
   m_Name: frog
@@ -5405,6 +5406,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85fb8ad32c76b446aebe2dd4b9d0d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &791651834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791651827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1888182ef3674945a50ebc1a1ef0dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 3
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &792109854
 GameObject:
   m_ObjectHideFlags: 0

@@ -31,8 +31,10 @@ public class enemyHealth : MonoBehaviour
         else if (currentHealth == 0 && !isDead)
         {   isDead=true;
             anim.SetTrigger("die");
-            GetComponent<PlayerController>().enabled = false;
         }
+    }
+    public void die(){
+        GameObject.Destroy(gameObject);
     }
     public void addhealth(float value){
         currentHealth = Mathf.Clamp(currentHealth + value, 0, startingHealth);
