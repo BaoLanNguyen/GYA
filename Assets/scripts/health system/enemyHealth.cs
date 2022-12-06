@@ -31,6 +31,7 @@ public class enemyHealth : MonoBehaviour
         else if (currentHealth == 0 && !isDead)
         {   isDead=true;
             anim.SetTrigger("die");
+            ScoreCounter.scoreValue += 10;
         }
     }
     public void die(){
