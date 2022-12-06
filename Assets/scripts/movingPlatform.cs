@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class movingPlatform : MonoBehaviour
 {
-    [SerializeField] public float speed;
-    public int startingPoint;
-    public Transform[] points;
+    [SerializeField] private float speed;
+    private int startingPoint;
+    private Transform[] points;
     private int i;
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class movingPlatform : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         if (Vector2.Distance(transform.position, points[i].position)<0.02f)
         {
             i++;
