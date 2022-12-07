@@ -5129,7 +5129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9726aa0fda7dfa4583d10da3dc03de9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCD: 0.5
+  attackCD: 0.4
   firePoint: {fileID: 1106244319}
   shotPrefab: {fileID: 7970856628451342209, guid: d970e0d44b486bd41a00b0e06a09fcd3, type: 3}
 --- !u!1 &761618884
