@@ -42,12 +42,6 @@ public class Health : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {   
-        if (Input.GetKeyDown(KeyCode.E)){
-            takeDamage(1);
-        }
-    }
     private IEnumerator Invulnerability(){
         Physics2D.IgnoreLayerCollision(7, 8, true);
         for (int i = 0; i < numberOfFlashes; i++)
