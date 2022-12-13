@@ -728,8 +728,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1020514411}
-        m_TargetAssemblyTypeName: LoadLV2, Assembly-CSharp
-        m_MethodName: LoadLevel2
+        m_TargetAssemblyTypeName: LoadLV3, Assembly-CSharp
+        m_MethodName: LoadLevel3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020514406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 170bdf19de073e248b0bbbafc1982218, type: 3}
+  m_Script: {fileID: 11500000, guid: 7e941aa13aec7964b97bad3d4b5ad5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1034580079

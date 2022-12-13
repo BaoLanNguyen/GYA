@@ -20,7 +20,7 @@ public class ScoreCounter : MonoBehaviour
     Destroy (gem.gameObject);
     if (IsGemDestroyed == false)
     {
-        scoreValue+=30;
+        scoreValue+=20;
         IsGemDestroyed=true;
     }
 }
