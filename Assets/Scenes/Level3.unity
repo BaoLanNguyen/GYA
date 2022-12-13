@@ -1047,8 +1047,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874625510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.6914, y: -5.6, z: 7.6674423}
-  m_LocalScale: {x: 1.0820576, y: 0.97354513, z: 1}
+  m_LocalPosition: {x: 14.64, y: -5.37, z: 7.667442}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 482117847}
@@ -1066,7 +1066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1888182ef3674945a50ebc1a1ef0dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 0
   iFramesDuration: 0
   numberOfFlashes: 0
 --- !u!114 &874625513
@@ -1094,7 +1094,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.018841725, y: -0.07974002}
+  m_Offset: {x: -0.03868103, y: -1.0112648}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1105,7 +1105,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2831292, y: 0.29051995}
+  m_Size: {x: 1.9320374, y: 2.6456833}
   m_EdgeRadius: 0
 --- !u!50 &874625515
 Rigidbody2D:
@@ -1138,7 +1138,7 @@ Animator:
   m_GameObject: {fileID: 874625510}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2b64126be7e51464090a3d211ccaa698, type: 2}
+  m_Controller: {fileID: 9100000, guid: a47009322c7ee6e4d944eb5793363e83, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
