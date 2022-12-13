@@ -3195,7 +3195,6 @@ GameObject:
   - component: {fileID: 76060991}
   - component: {fileID: 76060999}
   - component: {fileID: 76060998}
-  - component: {fileID: 76060997}
   - component: {fileID: 76060996}
   - component: {fileID: 76060990}
   - component: {fileID: 76060995}
@@ -3221,7 +3220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: acb22aacb61a85043aecc76ba4f5a784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 3
   OverManager: {fileID: 907899976}
   iFramesDuration: 1
   numberOfFlashes: 3
@@ -3270,9 +3269,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0026669125, y: -0.09397965}
+  m_Offset: {x: -0.012045531, y: -0.04409634}
   serializedVersion: 2
-  m_Radius: 0.072770596
+  m_Radius: 0.1009126
 --- !u!114 &76060994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3328,32 +3327,6 @@ MonoBehaviour:
     m_Bits: 64
   ExtraJumpsValues: 1
   animator: {fileID: 76060995}
---- !u!61 &76060997
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 76060989}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: cdd69ffc906b068499b107feac6fce63, type: 2}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.0044656713, y: -0.007889405}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.33, y: 0.32}
-    newSize: {x: 0.33, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.1229818, y: 0.13298362}
-  m_EdgeRadius: 0
 --- !u!50 &76060998
 Rigidbody2D:
   serializedVersion: 4
@@ -4322,7 +4295,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.3
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -5038,7 +5011,7 @@ MonoBehaviour:
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 0.3
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
