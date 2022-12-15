@@ -3326,11 +3326,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCD: 1
+  range: 1
+  colliderDistance: 1.23
   damage: 1
   boxCollider: {fileID: 874625514}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
 --- !u!1 &911035800
 GameObject:
   m_ObjectHideFlags: 0
