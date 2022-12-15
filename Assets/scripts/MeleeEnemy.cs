@@ -8,6 +8,7 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private int damage;
     [SerializeField] private BoxCollider2D boxCollider;
     private float CDTimer = Mathf.Infinity;
+    [SerializeField] private LayerMask playerLayer;
 
     private void Update() {
         CDTimer += Time.deltaTime;
@@ -20,7 +21,8 @@ public class MeleeEnemy : MonoBehaviour
     }
     private bool PlayerInSight()
     {
-        return false;
+        RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.left, 0, playerLayer);
+        return hit.collider != null;
     }
 }
 
