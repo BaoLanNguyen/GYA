@@ -11,13 +11,17 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private BoxCollider2D boxCollider;
     private float CDTimer = Mathf.Infinity;
     [SerializeField] private LayerMask playerLayer;
-
+    private Animator anim;
+    private void Awake() {
+        anim = GetComponent<Animator>();
+    }
     private void Update() {
         CDTimer += Time.deltaTime;
         if (PlayerInSight()){
             if (CDTimer >= attackCD)
         {
             CDTimer = 0;
+            anim.SetTrigger("meleeAttack");
         }
     }
     }
@@ -29,6 +33,11 @@ public class MeleeEnemy : MonoBehaviour
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right*range*transform.localScale.x*colliderDistance, new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
+    }
+    private void DamagePlayer(){
+        if (PlayerInSight()){
+            
+        }
     }
 }
 
