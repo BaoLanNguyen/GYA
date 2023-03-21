@@ -8338,6 +8338,8 @@ GameObject:
   - component: {fileID: 1066372026}
   - component: {fileID: 1066372029}
   - component: {fileID: 1066372030}
+  - component: {fileID: 1066372031}
+  - component: {fileID: 1066372032}
   m_Layer: 8
   m_Name: Bringer-of-Death
   m_TagString: enemy
@@ -8479,6 +8481,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.3718658, y: 0.54106796}
   m_EdgeRadius: 0
+--- !u!114 &1066372031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066372025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b85fb8ad32c76b446aebe2dd4b9d0d58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1066372032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066372025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1888182ef3674945a50ebc1a1ef0dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  iFramesDuration: 0
+  numberOfFlashes: 0
 --- !u!1 &1074087788
 GameObject:
   m_ObjectHideFlags: 0
