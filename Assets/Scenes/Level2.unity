@@ -8340,8 +8340,9 @@ GameObject:
   - component: {fileID: 1066372030}
   - component: {fileID: 1066372031}
   - component: {fileID: 1066372032}
+  - component: {fileID: 1066372033}
   m_Layer: 8
-  m_Name: Bringer-of-Death
+  m_Name: Boss
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8427,8 +8428,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066372025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -151.0658, y: -58.886, z: 0}
-  m_LocalScale: {x: 9.465, y: 10.073, z: 1}
+  m_LocalPosition: {x: -150.996, y: -58.886, z: 0}
+  m_LocalScale: {x: 9.365618, y: 10.073, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8508,6 +8509,18 @@ MonoBehaviour:
   startingHealth: 5
   iFramesDuration: 0
   numberOfFlashes: 0
+--- !u!114 &1066372033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066372025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33898714cf2d89e409fd2afa23e88072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1074087788
 GameObject:
   m_ObjectHideFlags: 0
