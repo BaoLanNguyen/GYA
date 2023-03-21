@@ -22,7 +22,7 @@ public class MeleeEnemy : MonoBehaviour
             if (CDTimer >= attackCD)
         {
             CDTimer = 0;
-            anim.SetTrigger("meleeAttack");
+            anim.SetTrigger("Attack");
         }
     }
     }

@@ -8341,6 +8341,7 @@ GameObject:
   - component: {fileID: 1066372031}
   - component: {fileID: 1066372032}
   - component: {fileID: 1066372033}
+  - component: {fileID: 1066372034}
   m_Layer: 8
   m_Name: Boss
   m_TagString: enemy
@@ -8428,8 +8429,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066372025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -150.0983, y: -59.4513, z: 0}
-  m_LocalScale: {x: 8.61798, y: 8.786773, z: 1}
+  m_LocalPosition: {x: -149.9172, y: -59.2488, z: 0}
+  m_LocalScale: {x: 8.536642, y: 9.221844, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -8469,7 +8470,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3618755, y: -0.19446605}
+  m_Offset: {x: 0.35111326, y: -0.19446605}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -8480,7 +8481,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3718658, y: 0.54106796}
+  m_Size: {x: 0.38761795, y: 0.54106796}
   m_EdgeRadius: 0
 --- !u!114 &1066372031
 MonoBehaviour:
@@ -8506,7 +8507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1888182ef3674945a50ebc1a1ef0dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 100
   iFramesDuration: 0
   numberOfFlashes: 0
 --- !u!114 &1066372033
@@ -8521,6 +8522,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33898714cf2d89e409fd2afa23e88072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1066372034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066372025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f338bfd196b45f4d92a1ba587cf95ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCD: 1
+  range: 2
+  colliderDistance: -0.3
+  damage: 1
+  boxCollider: {fileID: 1066372030}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!1 &1074087788
 GameObject:
   m_ObjectHideFlags: 0
