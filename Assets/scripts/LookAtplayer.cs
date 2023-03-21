@@ -7,7 +7,7 @@ public class LookAtplayer : MonoBehaviour
    Transform player;
    bool isFlipped = false;
    public void Lookplayer()
-   {
+   { player = GameObject.FindGameObjectWithTag("Player").transform;
      Vector3 flipped = transform.localScale;
      flipped.z *= -1f;
      if (transform.position.x > player.position.x && isFlipped)
